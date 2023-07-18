@@ -1,0 +1,143 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.mint__btn {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.box2 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.answer {
+  background: rgba(0, 0, 0, 0.6);
+}
+.background__image {
+  background-image: url("./img/Background.jpg");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+  .special__font {
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: #c10ae0;
+  }
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+  .team__font {
+    -webkit-text-stroke: 0.2px white;
+    -webkit-text-fill-color: #c10ae0;
+  }
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+
+.social-icons {
+  display: none;
+}
+.links-container {
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-container {
+  /* height: 10rem; */
+  display: flex;
+}
+
+.links {
+  padding: 7px;
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+}

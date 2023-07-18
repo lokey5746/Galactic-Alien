@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x8d5b547887162149f721e6527f0a3870a3309ab2",
+  "SCAN_LINK": "https://etherscan.io/address/0x8d5b547887162149f721e6527f0a3870a3309ab2",
+  "NETWORK": {
+    "NAME": "ETHEREUM",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Galactic Alien Yacht Club",
+  "SYMBOL": "GAYC",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 80000000000000000,
+  "DISPLAY_COST": 0.08,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/#",
+  "SHOW_BACKGROUND": true
+}
